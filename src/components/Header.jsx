@@ -11,7 +11,7 @@ const Header = () => {
       alignItems="center"
       width={"100%"}
     >
-      <Stack></Stack>
+      <Stack display={{base: 'none' , lg: 'flex' }} pl={'20'} ></Stack>
         <Stack>
           <Image _hover={{ cursor: "pointer" }} w="36" src={OdittoLogos} />
         </Stack>

@@ -4,6 +4,7 @@ import NftsCollection from "../components/NftsCollection";
 import Owner from "../components/Owner";
 import Video from "../components/Video";
 import WidgetContainer from "../components/WidgetContainer";
+import Footer from '../components/Footer'
 
 const LandingPage = () => {
   return (
@@ -11,8 +12,9 @@ const LandingPage = () => {
       <Header />
       <WidgetContainer />
       <Owner/>
-      <Video/>
+      {/* <Video/> */}
       <NftsCollection/>
+      <Footer/>
     </Stack>
   );
 };

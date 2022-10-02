@@ -2,9 +2,9 @@ import { AspectRatio, Stack } from "@chakra-ui/react";
 
 const Video = () => {
   return (
-    <Stack width={"100%"} height={"100%"} direction={"row"} justifyContent={'space-evenly'} >
-      <Stack borderRadius={'10%'} >
-        <AspectRatio width="400px" ratio={1}>
+    <Stack width={"100%"} height={"100%"} direction={{ base:'column' , lg:"row"}} justifyContent={'space-evenly'} >
+      <Stack p={'4'} >
+        <AspectRatio width={{ base: '100%'   , lg:"400px"}} ratio={1}>
           <iframe
             title="naruto"
             src="https://www.youtube.com/embed/QhBnZ6NPOY0"
@@ -12,8 +12,8 @@ const Video = () => {
           />
         </AspectRatio>
       </Stack>
-      <Stack borderRadius={'10%'} >
-        <AspectRatio width="400px" ratio={1}>
+      <Stack p={'4'} >
+        <AspectRatio  width={{ base: '100%'   , lg:"400px"}} ratio={1}>
           <iframe
             title="naruto"
             src="https://www.youtube.com/embed/QhBnZ6NPOY0"
